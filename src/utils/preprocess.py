@@ -76,7 +76,7 @@ class CropAndExtract():
 
         x_full_frames = [cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) for frame in full_frames]
         x_full_frames_copy = x_full_frames.copy()
-        x_full_frames.append(x_full_frames_copy)
+        x_full_frames = x_full_frames +  x_full_frames_copy 
         x_full_frames, crop, quad = self.croper.crop(x_full_frames, still=True, xsize=pic_size)
         clx, cly, crx, cry = crop
         lx, ly, rx, ry = quad
