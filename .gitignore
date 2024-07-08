@@ -161,4 +161,5 @@ checkpoints/DAIN_weight/model
 checkpoints/DAIN_weight/params
 checkpoints/hub/checkpoints/2DFAN4-cd938726ad.zip
 checkpoints/hub/checkpoints/s3fd-619a316812.pth
-results\
+results/
+__pycache__/
